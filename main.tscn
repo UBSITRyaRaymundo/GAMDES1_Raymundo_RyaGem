@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cshahv4o8rpb1"]
+
+[ext_resource type="Script" uid="uid://2p78iwx7h5ou" path="res://main.gd" id="1_ig7tw"]
+
+[node name="Main" type="Node2D" unique_id=2045976912]
+script = ExtResource("1_ig7tw")
+
+[node name="Label" type="Label" parent="." unique_id=1448634607]
+offset_right = 40.0
+offset_bottom = 23.0
+scale = Vector2(2, 2)
+text = "Raymundo
+v.1.0
+"
+horizontal_alignment = 1
+vertical_alignment = 1
