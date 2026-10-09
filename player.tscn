@@ -6,10 +6,10 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qku7h"]
 
 [node name="Player" type="CharacterBody2D" unique_id=37790321]
+position = Vector2(400, 500)
 script = ExtResource("1_onrkg")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1101278187]
-position = Vector2(576, 324)
 texture = ExtResource("2_onrkg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1534803295]
