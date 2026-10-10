@@ -14,7 +14,7 @@ const SPEED: float = 300.0
 
 # Jump strength, in pixels per second. It is negative because in Godot's 2D
 # space the Y axis points DOWN, so "up" is a negative number.
-const JUMP_VELOCITY: float = -450.0
+const JUMP_VELOCITY: float = -750.0
 
 # --- Variables -----------------------------------------------------------
 # Your health variables
