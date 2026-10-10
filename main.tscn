@@ -1,11 +1,21 @@
 [gd_scene format=3 uid="uid://cshahv4o8rpb1"]
 
+[ext_resource type="Texture2D" uid="uid://bnmunavxe5xeo" path="res://background.jpg" id="1_h2yge"]
+[ext_resource type="Texture2D" uid="uid://cn0amuodgchfj" path="res://rock (2).png" id="2_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://cfb6mt2b4egnu" path="res://player.tscn" id="2_h2yge"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ig7tw"]
-size = Vector2(1152, 160.5)
+size = Vector2(1368, 26)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qku7h"]
+size = Vector2(29, 315)
 
 [node name="Main" type="Node2D" unique_id=2045976912]
+
+[node name="Background" type="Sprite2D" parent="." unique_id=950588404]
+position = Vector2(601.12506, 303.99997)
+scale = Vector2(1.7216312, 1.7674419)
+texture = ExtResource("1_h2yge")
 
 [node name="Label" type="Label" parent="." unique_id=1448634607]
 visible = false
@@ -19,13 +29,13 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Player" parent="." unique_id=37790321 instance=ExtResource("2_h2yge")]
-position = Vector2(599, 368)
+position = Vector2(859, 400)
 
 [node name="Floor" type="StaticBody2D" parent="." unique_id=18412891]
 position = Vector2(580, 632)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor" unique_id=1624191880]
-position = Vector2(-9, -166)
+position = Vector2(-29, -5)
 shape = SubResource("RectangleShape2D_ig7tw")
 
 [node name="ColorRect" type="ColorRect" parent="Floor" unique_id=2093342182]
@@ -33,3 +43,27 @@ offset_left = -576.0
 offset_top = -20.0
 offset_right = 576.0
 offset_bottom = 20.0
+color = Color(0.35943472, 0.25874877, 0.023868376, 1)
+
+[node name="LeftWall" type="StaticBody2D" parent="." unique_id=1847395748]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftWall" unique_id=1890561796]
+position = Vector2(16, 391)
+shape = SubResource("RectangleShape2D_qku7h")
+
+[node name="RightWall" type="StaticBody2D" parent="." unique_id=470641077]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RightWall" unique_id=1837444202]
+position = Vector2(1136, 408)
+shape = SubResource("RectangleShape2D_qku7h")
+
+[node name="Rock" type="StaticBody2D" parent="." unique_id=1708501578]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Rock" unique_id=827889667]
+position = Vector2(209, -2)
+polygon = PackedVector2Array(302, 557, 317, 542, 343, 558, 357, 579, 378, 589, 389, 602, 341, 609, 265, 607, 276, 587, 287, 570)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=715112167]
+position = Vector2(522, 560)
+scale = Vector2(0.51995325, 0.45847225)
+texture = ExtResource("2_0xm2m")

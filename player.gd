@@ -1,3 +1,8 @@
+# Name: Raymundo, Rya Gem A.
+# Course Code: GAMDES1
+# Date: October 10, 2026
+
+
 # player.gd
 # Controls the Player: gravity, running, jumping, health, and respawning.
 # Attach this script to the Player node (a CharacterBody2D).
